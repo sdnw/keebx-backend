@@ -6,6 +6,7 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.float :price
       t.string :image
       t.string :description
+      t.integer :likes
 
       t.timestamps
     end
