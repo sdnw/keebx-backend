@@ -1,0 +1,18 @@
+<!-- inside app/views/hello_mailer/welcome_email.html.erb -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to KeebX, <%= @user[:name] %></h1>
+    <p>Thanks for joining and have a great day!</p>
+    <h1>This is h1 title</h1>
+
+    <%= form_with url: welcome_please_send_email_path do |f| %>
+    <%= f.submit 'Send e-mail' %>
+    <% end %>
+    <h1>We tried to send an email</h1>
+    <p>Please check the logs</p>
+  </body>
+</html>

@@ -44,10 +44,10 @@ Item.create(
 )
 
 Item.create(
-    name: "C³EQUALZ X TKC Tangerine Switches"
-    price: "50.00"
-    description: "The smoothest linear in the game, Tangerine switches have a linear POM stem, a 67g spring (Dark variant) or 62g spring (Light variant), and a UHMWPE housing."
-    image: "https://cdn.shopify.com/s/files/1/1679/2319/products/ProdPhoto-3_1296x.jpg?v=1656007595"
+    name: "C³EQUALZ X TKC Tangerine Switches",
+    price: "50.00",
+    description: "The smoothest linear in the game, Tangerine switches have a linear POM stem, a 67g spring (Dark variant) or 62g spring (Light variant), and a UHMWPE housing.",
+    image: "https://cdn.shopify.com/s/files/1/1679/2319/products/ProdPhoto-3_1296x.jpg?v=1656007595",
     likes: "70"
 )
 

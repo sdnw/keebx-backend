@@ -6,4 +6,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get "welcome/index"
+
+  # route where you will send an email
+  post "welcome/please_send_email"
+
+  # where visitor are redirected once email has been sent
+  get "welcome/email_sent"
+
+  root to: "welcome#index"
 end
