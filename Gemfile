@@ -62,6 +62,11 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem "capybara"
+  gem "selenium-webdriver"
+  gem "webdrivers"
+  gem "bcrypt"
+  gem 'letter_opener', group: :development
 end
 
 group :test do
@@ -69,6 +74,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "bcrypt"
+  gem 'letter_opener', group: :development
 end
 
-gem 'letter_opener', group: :development
+  gem 'rack-cors'

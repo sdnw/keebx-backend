@@ -5,11 +5,14 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+User.destroy_all
+Item.destroy_all
 
-User.create(name: Steven)
-User.create(name: Max)
-User.create(name: Lorena)
-User.create(name: Yoshi)
+User.create(name: "Steven", email: "steven@gmail.com")
+User.create(name: "Max", email: "max@gmail.com")
+User.create(name: "Lorena", email: "lorena@gmail.com")
+User.create(name: "Yoshi", email: "yoshi@gmail.com")
+
 
 Item.create(
     name: "Krytox GPL 205G0 0.35 oz",

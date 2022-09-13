@@ -1,4 +1,5 @@
-class UsersController < ApplicationControllerskip_before_action :authorize, only: [:create]
+class UsersController < ApplicationController
+    # skip_before_action :authorize, only: [:create]
 
     def index 
         render json: User.all 
@@ -8,11 +9,11 @@ class UsersController < ApplicationControllerskip_before_action :authorize, only
         user = User.create(user_params)   
         if user.valid?
             session[:user_id] = user.id
+            HelloMailer.welcome_email(user).deliver
             render json: user, status: :created
         else
             render json: {errors: user.errors.full_messages}, status: :unprocessable_entity
         end
-
     end
 
     def show
@@ -31,6 +32,7 @@ class UsersController < ApplicationControllerskip_before_action :authorize, only
     def user_params
         params.permit(
             :name,
+            :email,
             :password
         )
     end

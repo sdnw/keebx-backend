@@ -1,4 +1,4 @@
-class WelcomeController < ApplicationController
+class KeebxEmailController < ApplicationController
 
     def index
     end

@@ -2,6 +2,11 @@ require_relative "boot"
 
 require "rails/all"
 
+require "action_mailer/railtie"
+
+require 'rack'
+require 'rack/cors'
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -12,12 +17,20 @@ module KeebxBackend
     config.load_defaults 7.0
 
     # Configuration for the application, engines, and railties goes here.
-    #
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    require "action_mailer/railtie"
+    self.
+    config.middleware.use Rack::Cors do
+      allow do
+        origins '*'
+        resource '*',
+                 headers: :any,
+                 expose: %w(access-token expiry token-type uid client),
+                 methods: %i(post)
+      end
+    end
   end
 end
