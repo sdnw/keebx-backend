@@ -3,16 +3,15 @@
 <html>
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <style>
+      h1 {text-align: center;}
+      p {text-align: center;}
+    </style>
   </head>
-  <body>
-    <h1>Welcome to KeebX, <%= @user[:name] %></h1>
-    <p>Thanks for joining and have a great day!</p>
-    <h1>This is h1 title</h1>
-
-    <%# <%= form_with url: welcome_please_send_email_path do |f| %> %>
-    <%# <%= f.submit 'Send e-mail' %> %>
-    <%# <% end %> %>
-    <h1>We tried to send an email</h1>
-    <p>Please check the logs</p>
+  <body style="background-color:#D3D3D3;">
+    <h1 style="font-family:sans-serif">Hey <%= @user[:name] %>, welcome to KeebX!</h1>
+    <center><img src="https://c.tenor.com/0ygiqFaX-ssAAAAC/bongo-cat-typing.gif"></center>
+    <p style="font-family:sans-serif">Thanks for choosing us for your keyboard needs and have a great day!</p>
+  
   </body>
 </html>

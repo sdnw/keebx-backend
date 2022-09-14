@@ -1,6 +1,6 @@
 class HelloMailer < ApplicationMailer
 
-    default from: 'me@example.com'
+    default from: 'welcome@keebx.com'
     layout "mailer"
   
     def welcome_email(user)
