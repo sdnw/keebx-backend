@@ -67,15 +67,15 @@ group :development do
   gem "webdrivers"
   gem "bcrypt"
   gem 'letter_opener', group: :development
+  gem "pry"
 end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
-  gem "selenium-webdriver"
-  gem "webdrivers"
-  gem "bcrypt"
-  gem 'letter_opener', group: :development
+  # gem "capybara"
+  # gem "selenium-webdriver"
+  # gem "webdrivers"
+  # gem "bcrypt"
+  # gem 'letter_opener', group: :development
 end
-
   gem 'rack-cors'

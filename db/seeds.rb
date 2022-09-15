@@ -8,13 +8,13 @@
 User.destroy_all
 Item.destroy_all
 
-User.create(name: "Steven", email: "steven@gmail.com")
-User.create(name: "Max", email: "max@gmail.com")
-User.create(name: "Lorena", email: "lorena@gmail.com")
-User.create(name: "Yoshi", email: "yoshi@gmail.com")
+User.create!(name: "Steven", email: "steven@gmail.com", password: "123")
+User.create!(name: "Max", email: "max@gmail.com", password: "123")
+User.create!(name: "Lorena", email: "lorena@gmail.com", password: "123")
+User.create!(name: "Yoshi", email: "yoshi@gmail.com", password: "123")
 
 
-Item.create(
+Item.create!(
     name: "Krytox GPL 205G0 0.35 oz",
     price: "15.00",
     description: "205G0 is a grease lubricant recommended for linear/tactile switches but with very light application.",
@@ -22,7 +22,7 @@ Item.create(
     likes: "6"
 )
 
-Item.create(
+Item.create!(
     name: "Krytox GPL 105",
     price: "15.00",
     description: "GPL 105 Lubricant is a high performance PTFE oil lubricant. This lube is recommended for springs and linear switches.",
@@ -30,7 +30,7 @@ Item.create(
     likes: "3"
 )
 
-Item.create(
+Item.create!(
     name: "DUROCK V2 PCB Mount Screw-in Stabilizers",
     price: "13.00",
     description: "These are Durock V2 PCB mounted (screw-in) stabilizers.  They come pre-clipped and feature an improved design to prevent wire popping.",
@@ -38,7 +38,7 @@ Item.create(
     likes: "9"
 )
 
-Item.create(
+Item.create!(
     name: "KBD67 Lite R4 Mechanical Keyboard DIY Kit",
     price: "110.00",
     description: "The KBD67 Lite Mechanical Keyboard Kit is an entry level DIY kit fit for both newcomers and veterans alike. This kit features everything you would need in order to build a keyboard except for switches and keycaps.",
@@ -46,7 +46,7 @@ Item.create(
     likes: "20"
 )
 
-Item.create(
+Item.create!(
     name: "C³EQUALZ X TKC Tangerine Switches",
     price: "50.00",
     description: "The smoothest linear in the game, Tangerine switches have a linear POM stem, a 67g spring (Dark variant) or 62g spring (Light variant), and a UHMWPE housing.",
@@ -54,7 +54,7 @@ Item.create(
     likes: "70"
 )
 
-Item.create(
+Item.create!(
     name: "Cherry MX Brown Switches",
     price: "30.00",
     description: "The tactile bump can easily be felt on Cherry MX Brown switches, and the resistance is similar to your average keyboard. Peak force 55g, with 45g at the point of actuation.",
